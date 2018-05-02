@@ -2,7 +2,6 @@ package ProcessingApp;
 
 import processing.core.PApplet;
 import processing.core.PImage;
-import processing.*;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
 
@@ -25,9 +24,8 @@ public class MainApp extends PApplet{
     static String tomSoundFile = "src/data/sounds/tom.wav";
 
     public void settings(){
-        //surface.setResizable(true);
-        size(400, 400);
 
+        size(400, 400);
     }
 
     public void setup(){
@@ -100,7 +98,6 @@ public class MainApp extends PApplet{
         PApplet.main("ProcessingApp.MainApp", args);
 
     }
-
 
     static void playSound(String soundFile){
         InputStream in = null;
